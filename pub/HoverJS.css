@@ -1,0 +1,46 @@
+.box{
+    width: 100%;
+}
+
+a:hover + .box,.box:hover{
+    position: relative;
+    z-index: 1;
+   
+}
+
+.iframe{
+    height: 500px;
+    width: 500px;
+}
+
+.iframe-button {
+    display: none;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 16px;
+    background-color: #f44336;
+    color: white;
+  }
+  
+  /* Only show the button when the parent is hovered: */
+
+  .box:hover .iframe-button {
+    display: initial;
+  }
+
+
+  #checkboxes{
+    width: 10%;
+    padding: 20px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+    float: right;
+  }
+
+ 
+  #checkboxes ul {
+    list-style: none;
+
+  }
