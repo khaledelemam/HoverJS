@@ -1,16 +1,19 @@
 .box{
-    width: 100%;
+  width: max-content;
+  position:absolute;
+  
 }
 
 a:hover + .box,.box:hover{
-    position: relative;
-    z-index: 1;
+  position:absolute;
+  z-index: 1;
+ 
    
 }
 
 .iframe{
-    height: 500px;
-    width: 500px;
+    border-style: groove;
+    border-color: #bbb;
 }
 
 .iframe-button {
@@ -21,9 +24,11 @@ a:hover + .box,.box:hover{
     font-size: 16px;
     background-color: #f44336;
     color: white;
+    border-style: groove;
+    border-width:thin;
   }
   
-  /* Only show the button when the parent is hovered: */
+  /* only show the button when the parent is hovered: */
 
   .box:hover .iframe-button {
     display: initial;
@@ -31,16 +36,40 @@ a:hover + .box,.box:hover{
 
 
   #checkboxes{
-    width: 10%;
-    padding: 20px 0;
+    position: absolute;
+    width: max-content;
+    padding: 35px 35px;
     text-align: center;
-    background-color: lightblue;
-    margin-top: 20px;
+    background-color: #AFEEEE;
+    top: 40px;
+    left: 1500px;
     float: right;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: move;
   }
 
- 
   #checkboxes ul {
     list-style: none;
 
   }
+
+  #save-label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 27px;
+    
+  }
+
+#close {
+  padding:2px 5px;
+  background:#ccc;
+  position: absolute;
+  top:0;
+  right:auto;
+  left:0;
+  cursor: pointer;
+  border-style: groove;
+  border-width:thin;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#close:hover {background: #bbb;}

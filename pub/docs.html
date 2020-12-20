@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Documentation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="HoverJS.css">
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer type="text/javascript" src='js/HoverJS.js'></script>
+  <script defer type="text/javascript" src='examples.js'></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css"/>
+  
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
+
+<div style="font-family:Arial, Helvetica, sans-serif">
+<h1>HoverJS</h1>
+<h2>Documentation</h2>
+  <h3>Getting started</h3>
+  
+ Add the following code to the head in your HTML file
+
+ <pre><code class="language-markup">
+  
+    &lt;link rel="stylesheet" type="text/css" href="HoverJS.css">
+    &lt;script defer type="text/javascript" src='js/HoverJS.js'></script>
+  
+  </code></pre>
+
+  To use the library:
+
+  <pre><code class="language-js">
+  
+    const hv = new Hover()
+  
+  </code></pre>
+  <h3>API</h3>
+
+  setFrame(id, width:optional, height:optional)<br>
+  sets up hover preview with the save button when mouse is over the element. Takes in element id (must), height and width of the preview frame. Dimensions are optional, the default is 400 by 400px.<br>
+  Cursor has to be on element for at least 0.5 seconds for frame to show.
+  <hr>
+  createList(id:optional)<br>
+  creates draggable pop-up list. If input is element id, it creates a checkbox of element with hyperlink by calling createCheckbox
+  <hr>
+  createCheckbox(id)<br>
+  creates checkbox corresponding to the element which its id is the input.
+  <hr>
+  removeCheckbox(id)<br>
+  removes checkbox of element.
+  <hr>
+  showList()<br>
+  shows pop-up list.
+  <hr>
+  hideList()<br>
+  hides pop up list.
+  <hr>
+  getTotalItems()<br>
+  return total number of items in the pop-up list.
+  <hr>
+  getItemsList()<br>
+  returns list of elements in the pop-up list
+  <hr>
+ listBackgroundColor(color)<br>
+ takes in hexadecimal color code and changes the background color of the list.
+
+
+  
+  
+</div>
+
+
+
+</body>
+</html>
+
+

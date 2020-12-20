@@ -1,6 +1,17 @@
 
-// set up iframe with save button that creates the pop up list when clicked
 
-document.getElementById("dogs").onmouseover = function() {setFrame("dogs")};
+"use strict"; 
 
-document.getElementById("cats").onmouseover = function() {setFrame("cats")};
+
+const hv = new Hover()
+
+function examples() {	
+
+    document.getElementById("cats").onmouseover = function() {hv.setFrame("cats")};
+    document.getElementById("squirrels").onmouseover = function() {hv.setFrame("squirrels")};
+    document.getElementById("raccoons").onmouseover = function() {hv.setFrame("raccoons")};	
+}
+
+examples()
+
+

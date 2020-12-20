@@ -4,19 +4,83 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Alpha</title>
+  <title>HoverJS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link rel="stylesheet" type="text/css" href="HoverJS.css">
+  <script defer type="text/javascript" src='js/HoverJS.js'></script>
+  <script defer type="text/javascript" src='examples.js'></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css"/>
+  
 </head>
+<body >
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
 
-<body>
+  <div style="font-family:Arial, Helvetica, sans-serif">
+
+    <h1>HoverJS</h1>
+  <a class="link" id="doc" href="docs.html" target="_blank">Documentation</a>
+  <h2>Examples</h2>
+
+   To use this example: <br>
+
+
+   Hover over any of the animals. <br>Check the hover preview. <br>A save button will appear once you hover over the linked page. <br>Click on the save button.<br> A draggable pop-up list will appear. <br>You can add more links to the list or close it. <br>Check the links you saved.
+   <hr>
+  <p style="font-size:18px;"> Back home I grew up  with different wild life than I see in Canada. I am used to seeing <a id = "cats" href="https://en.wikipedia.org/wiki/Cat">cats</a> in the streets but I have not seen a single stray cat here.</p>  
+  <p style="font-size:18px;"> Since I have been living in Toronto I encountered lots of <a  id = "squirrels" href="https://en.wikipedia.org/wiki/Squirrel">squirrels</a>  and <a id = "raccoons" href="https://en.wikipedia.org/wiki/Raccoon">racoons</a> which I never saw back home</p>
+
+
+  JavaScript code
+  <div>
+  <pre><code class="language-js">
+    
+  
+  const hv = new Hover()
+
+  function examples() {	
+  
+      document.getElementById("cats").onmouseover = function() {hv.setFrame("cats")};
+      document.getElementById("squirrels").onmouseover = function() {hv.setFrame("squirrels")};
+      document.getElementById("raccoons").onmouseover = function() {hv.setFrame("raccoons")};	
+  }
+  
+  examples()
+
+</code></pre>
+</div>
+
+HTML code
+
+  <pre><code class="language-markup">
+    
+    <p style="font-size:18px;"> Back home I grew up  with different wild life than I see in Canada. I am used to seeing &lt;a id = "cats" href="https://en.wikipedia.org/wiki/Cat">cats&lt;/a> in the streets but I have not seen a single stray cat here.</p>  
+    <p style="font-size:18px;"> Since I have been living in Toronto I encountered lots of &lt;a  id = "squirrels" href="https://en.wikipedia.org/wiki/Squirrel">squirrels&lt;/a>  and &lt;a id = "raccoons" href="https://en.wikipedia.org/wiki/Raccoon">racoons&lt;/a> which I never saw back home</p>
+  
+
+</code></pre>
+
+
+
+</div>
  
-  This preview for <a  id = "dogs" href="https://en.wikipedia.org/wiki/Dog">dogs</a> remains open on mouseover.
-  Another preview for <a id = "cats" href="https://en.wikipedia.org/wiki/Cat">cats</a>.
 
-  <script type="text/javascript" src="js/HoverJS.js"></script>
-   <script type="text/javascript" src="examples.js"></script>
+
+
+  
+  
+ 
+  <!-- This preview for <a  id = "dogs" href="https://en.wikipedia.org/wiki/Dog">dogs</a> remains open on mouseover.
+  Another preview for <a id = "cats" href="https://en.wikipedia.org/wiki/Cat">cats</a>. -->
+ 
+
+  <!-- <script type="text/javascript" src="js/HoverJS.js"></script>
+   <script type="text/javascript" src="examples.js"></script> -->
 
 
 
 </body>
 </html>
+
+
