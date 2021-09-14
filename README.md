@@ -10,7 +10,7 @@ link rel="stylesheet" type="text/css" href="HoverJS.css"
 
 To use library: const hv = new Hover()
 
-Documentation: https://floating-depths-93359.herokuapp.com/docs.html
+Documentation: https://hoverjslib.herokuapp.com/docs.html
 
-Landing Page: https://floating-depths-93359.herokuapp.com/examples.html
+Landing Page: https://hoverjslib.herokuapp.com/examples.html
   
